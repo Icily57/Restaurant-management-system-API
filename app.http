@@ -1,0 +1,619 @@
+### API SERVER
+GET http://localhost:8000/
+
+### Users API
+#### Get all users
+
+GET http://localhost:8000/api/user
+
+### Get more user information
+GET http://localhost:8000/api/usersInfo
+
+#### Get user by id
+
+GET http://localhost:8000/api/user/1
+
+#### Create user
+
+POST http://localhost:8000/api/user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkpvaG4iLCJleHAiOjE3MTgyNzU5NTB9.RBHEWH7c3FdyFUvC-8tTBUKOFezOQ0pLPnbB1hAliy8
+Content-Type: application/json
+
+{
+    "name": "Ezra Bomett",
+    "contact_phone": "0710984532",
+    "contact_verified": "true",
+    "email": "bomett@mail.com",
+    "email_verified": "true",
+    "confirmation_code": "XSVFRTH",
+    "password": "ezra10"
+}
+
+#### Update user
+
+PUT http://localhost:8000/api/user/1
+Content-Type: application/json
+
+{
+    "name": "Kevin Kevo",
+}
+
+#### Delete user
+
+DELETE http://localhost:8000/api/user/10
+
+Authorization: ""
+
+### States API
+#### Get all states
+
+GET http://localhost:8000/api/state
+
+### Get more state information
+GET http://localhost:8000/api/statesInfo
+
+#### Get state by id
+
+GET http://localhost:8000/api/state/1
+
+#### Create state
+
+POST http://localhost:8000/api/state
+Content-Type: application/json
+
+{
+    "name": "Nairobi",
+    "code" : "NRB"
+}
+
+#### Update state
+
+PUT http://localhost:8000/api/state/1
+Content-Type: application/json
+
+{
+    "name": "Nairobi City",
+}
+
+#### Delete state
+
+DELETE http://localhost:8000/api/state/10
+
+Authorization: ""
+
+### City API
+#### Get all cities
+
+GET http://localhost:8000/api/city
+
+### Get more city information
+GET http://localhost:8000/api/cityInfo
+
+#### Get city by id
+
+GET http://localhost:8000/api/city/1
+
+#### Create city
+
+POST http://localhost:8000/api/city
+Content-Type: application/json
+
+{
+    "name": "Nairobi",
+    "state_id" : 1
+}
+
+#### Update city
+
+PUT http://localhost:8000/api/city/1
+Content-Type: application/json
+
+{
+    "name": "Nairobi City",
+}
+
+#### Delete city
+
+DELETE http://localhost:8000/api/city/10
+
+Authorization:""
+
+### Address API
+#### Get all addresses
+
+GET http://localhost:8000/api/address
+
+### Get more address information
+GET http://localhost:8000/api/addressInfo
+
+#### Get address by id
+
+GET http://localhost:8000/api/address/1
+
+#### Create address
+
+POST http://localhost:8000/api/address
+Content-Type: application/json
+
+{
+    "address": "Tom Mboya Street",
+    "city_id" : 1
+}
+
+#### Update address
+
+PUT http://localhost:8000/api/address/1
+Content-Type: application/json
+
+{
+    "address": "Tom Mboya Street",
+}
+
+#### Delete address
+
+DELETE http://localhost:8000/api/address/10
+
+Authorization:""
+
+### Restaurant API
+#### Get all restaurants
+
+GET http://localhost:8000/api/restaurant
+
+### Get more restaurant information
+GET http://localhost:8000/api/restaurantInfo
+
+#### Get restaurant by id
+
+GET http://localhost:8000/api/restaurant/1
+
+#### Create restaurant
+
+POST http://localhost:8000/api/restaurant
+Content-Type: application/json
+
+{
+    "name": "Java",
+    "address_id" : 1
+}
+
+#### Update restaurant
+
+PUT http://localhost:8000/api/restaurant/1
+Content-Type: application/json
+
+{
+    "name": "Java House",
+}
+
+#### Delete restaurant
+
+DELETE http://localhost:8000/api/restaurant/10
+
+Authorization:""
+
+### Restaurant Owner API
+#### Get all restaurant owners
+
+GET http://localhost:8000/api/restaurant_owner
+
+### Get more restaurant owner information
+GET http://localhost:8000/api/restuarantOwnerInfo
+
+#### Get restaurant owner by id
+
+GET http://localhost:8000/api/restaurant_owner/1
+
+#### Create restaurant owner
+
+POST http://localhost:8000/api/restaurant_owner
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "restaurant_id" : 1
+}
+
+#### Update restaurant owner
+
+PUT http://localhost:8000/api/restaurant_owner/1
+Content-Type: application/json
+
+{
+    "user_id": 1,
+}
+
+#### Delete restaurant owner
+
+DELETE http://localhost:8000/api/restaurant_owner/10
+
+Authorization:""
+
+### category API
+#### Get all categories
+
+GET http://localhost:8000/api/category
+
+### Get more category information
+GET http://localhost:8000/api/categoryInfo/1
+
+
+#### Get category by id
+
+GET http://localhost:8000/api/category/1
+
+#### Create category
+
+POST http://localhost:8000/api/category
+Content-Type: application/json
+
+{
+    "name": "Fast Food",
+}
+
+#### Update category
+
+PUT http://localhost:8000/api/category/1
+Content-Type: application/json
+
+{
+    "name": "Fast Food",
+}
+
+#### Delete category
+
+DELETE http://localhost:8000/api/category/10
+
+Authorization:""
+
+### Menu Items API
+#### Get all menu items
+
+GET http://localhost:8000/api/menu_items
+
+#### Get more menu items information
+GET http://localhost:8000/api/menuInfo
+
+#### Get menu item by id
+
+GET http://localhost:8000/api/menu_items/1
+
+#### Create menu item
+
+POST http://localhost:8000/api/menu_items
+Content-Type: application/json
+
+{
+    "name": "Chicken Burger",
+    "price": 500,
+    "category_id": 1,
+    "restaurant_id": 1
+}
+
+#### Update menu item
+
+PUT http://localhost:8000/api/menu_items/1
+Content-Type: application/json
+
+{
+    "name": "Chicken Burger",
+}
+
+#### Delete menu item
+
+DELETE http://localhost:8000/api/menu_items/10
+
+Authorization:""
+
+### Orders API
+#### Get all orders
+
+GET http://localhost:8000/api/orders
+
+#### Get more orders information
+GET http://localhost:8000/api/OrderInfo
+
+#### Get order by id
+
+GET http://localhost:8000/api/orders/1
+
+#### Create order
+
+POST http://localhost:8000/api/orders
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "restaurant_id": 1,
+    "total_price": 500,
+    "status": "pending"
+}
+
+#### Update order
+
+PUT http://localhost:8000/api/orders/1
+Content-Type: application/json
+
+{
+    "status": "completed",
+}
+
+#### Delete order
+
+DELETE http://localhost:8000/api/orders/10
+
+Authorization:""
+
+### Order Menu Item API
+#### Get all order menu items
+
+GET http://localhost:8000/api/order_menu_item
+
+#### Get more order menu items information
+GET http://localhost:8000/api/menuOrdersInfo
+
+#### Get order menu item by id
+
+GET http://localhost:8000/api/order_menu_item/1
+
+#### Create order menu item
+
+POST http://localhost:8000/api/order_menu_item
+Content-Type: application/json
+
+{
+    "order_id": 1,
+    "menu_item_id": 1,
+    "quantity": 2
+}
+
+#### Update order menu item
+
+PUT http://localhost:8000/api/order_menu_item/1
+Content-Type: application/json
+
+{
+    "quantity": 3,
+}
+
+#### Delete order menu item
+
+DELETE http://localhost:8000/api/order_menu_item/10
+
+Authorization:""
+
+### Drivers API
+#### Get all drivers
+
+GET http://localhost:8000/api/drivers
+
+#### Get more drivers information
+GET http://localhost:8000/api/driverInfo
+
+#### Get driver by id
+
+GET http://localhost:8000/api/drivers/1
+
+#### Create driver
+
+POST http://localhost:8000/api/drivers
+Content-Type: application/json
+
+{
+    "car_make": "Toyota",
+    "car_model": "Vitz",
+    "car_year": 2010,
+    "user_id": 1,
+    "online": true,
+    "delivering": false
+}
+
+#### Update driver
+
+PUT http://localhost:8000/api/drivers/1
+Content-Type: application/json
+
+{
+    "online": false,
+}
+
+#### Delete driver
+
+DELETE http://localhost:8000/api/drivers/10
+
+Authorization:""
+
+### Orders Status API
+#### Get all orders status
+
+GET http://localhost:8000/api/orders_status
+
+#### Get more orders status information
+GET http://localhost:8000/api/orderStatusInfo
+
+#### Get order status by id
+
+GET http://localhost:8000/api/orders_status/1
+
+#### Create order status
+
+POST http://localhost:8000/api/orders_status
+Content-Type: application/json
+
+{
+    "order_id": 1,
+    "status": "pending"
+}
+
+#### Update order status
+
+PUT http://localhost:8000/api/orders_status/1
+Content-Type: application/json
+
+{
+    "status": "completed",
+}
+
+#### Delete order status
+
+DELETE http://localhost:8000/api/orders_status/10
+
+Authorization:""
+
+### status catalog API
+#### Get all status catalog
+
+GET http://localhost:8000/api/status_catalog
+
+#### Get more status catalog information
+GET http://localhost:8000/api/statusCatalog
+
+#### Get status catalog by id
+
+GET http://localhost:8000/api/status_catalog/1
+
+#### Create status catalog
+
+POST http://localhost:8000/api/status_catalog
+Content-Type: application/json
+
+{
+    "name": "pending"
+}
+
+#### Update status catalog
+
+PUT http://localhost:8000/api/status_catalog/1
+Content-Type: application/json
+
+{
+    "name": "completed",
+}
+
+#### Delete status catalog  
+
+DELETE http://localhost:8000/api/status_catalog/10
+
+Authorization:""
+
+### Comments API
+#### Get all comments
+
+GET http://localhost:8000/api/comments
+
+#### Get more comments information
+GET http://localhost:8000/api/comments/2
+
+#### Get comment by id
+
+GET http://localhost:8000/api/comments/1
+
+#### Create comment
+
+POST http://localhost:8000/api/comments
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "restaurant_id": 1,
+    "comment": "The food was great"
+}
+
+#### Update comment
+
+PUT http://localhost:8000/api/comments/1
+Content-Type: application/json
+
+{
+    "comment": "The food was amazing",
+}
+
+#### Delete comment 
+
+DELETE http://localhost:8000/api/comments/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsInVzZXJuYW1lIjoiTG9ycmFpbmUiLCJleHAiOjE3MTgyNzQ0MTN9.G9ZjPBW7EebfaqRoeX1NAtZ2x-lph4DUNaVaXK6_xIE
+
+
+### Auth API
+#### Register 
+
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+    "user_id": 10,
+    "username": "Ezra",
+    "password": "ezra10",
+    "role": "user"
+}
+
+#### Login
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "John",
+    "password": "kim1"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
