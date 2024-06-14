@@ -4,6 +4,7 @@ import { loginValidator, registerValidator } from '../Validators/user.validator'
 import { loginUser, registerUser } from './auth.controller';
 
 
+
 export const authRouter = new Hono();
 
 authRouter.post('/register', zValidator('json',registerValidator,(result,c)=>{    

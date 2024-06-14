@@ -559,7 +559,7 @@ Content-Type: application/json
 
 ###
 
-GET https://nokras.azurewebsites.net/api
+GET https://restaurant-management-system-api.azurewebsites.net/api
 
 
 
