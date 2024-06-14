@@ -52,7 +52,9 @@ app.use('*', registerMetrics)
 app.get('/', (c) => {
   return c.html(
     html`
-   <h1>Welcome to the nokras API</h1>
+   <h1>Welcome to Restaurant-management-system-API </h1>
+   <h2>Hello 🤗, my name is Mikaela Muthoni 😀</h2>
+   <p>Feel free to interact with my API 😁</p>
     
     `)
 })
