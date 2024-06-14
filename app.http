@@ -530,8 +530,8 @@ Content-Type: application/json
 
 #### Delete comment 
 
-DELETE http://localhost:8000/api/comments/1
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsInVzZXJuYW1lIjoiTG9ycmFpbmUiLCJleHAiOjE3MTgyNzQ0MTN9.G9ZjPBW7EebfaqRoeX1NAtZ2x-lph4DUNaVaXK6_xIE
+DELETE http://localhost:8000/api/comments/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkpvaG4iLCJleHAiOjE3MTgyOTU1NTl9.8eMiCcKVFNEyagOE9L4xu_LJJ8DqGBoBrXkhooWA3rE
 
 
 ### Auth API

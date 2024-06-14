@@ -2,12 +2,6 @@ import "dotenv/config";
 import { verify } from "hono/jwt"
 import { Context, Next } from "hono";
 
-// export interface TokenPayload {
-//     "sub": string;
-//     "role": string;
-//     "exp": number
-// }
-
 //AUTHENTICATION MIDDLEWARE
 export const verifyToken = async (token: string, secret: string) => {
     try {
@@ -29,10 +23,13 @@ export const authMiddleware = async (c: Context, next: Next, requiredRole: strin
 
     if (!decoded) return c.json({ error: "Invalid token 💀" }, 401);
 
-    if (decoded.role !== requiredRole) return c.json({ error: "Unauthorized  😒" }, 401);
-
+    if (requiredRole === "both") {
+        if (decoded.role !== "admin" && decoded.role !== "user") return c.json({ error: "Unauthorized" }, 401);
+        return next();
+    }
     return next();
 }
 
 export const adminRoleAuth = async (c: Context, next: Next) => await authMiddleware(c, next, "admin")
 export const userRoleAuth = async (c: Context, next: Next) => await authMiddleware(c, next, "user")
+export const bothRoleAuth = async (c: Context, next: Next) => await authMiddleware(c, next, "both")

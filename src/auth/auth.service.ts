@@ -1,13 +1,12 @@
-import { eq, sql } from "drizzle-orm";
+import { sql } from "drizzle-orm";
 import db from "../drizzle/db";
 import { TIAuthOnUsers, TSAuthOnUsers,AuthOnUsersTable } from "../drizzle/schema";
 
 
 // export {userExists} from "./auth.service";
-export const createUserService = async(user:TIAuthOnUsers) => {
-     await db.insert(AuthOnUsersTable).values(user)
-    // .returning({id:user_table.user_id}
-        return "User Registered successfully 🎉";
+export const createUserService = async (user: TIAuthOnUsers): Promise<string | null> => {
+    await db.insert(AuthOnUsersTable).values(user)
+    return "User Registered successfully 🎉";
 }
 
 export const loginUserService = async(user:TSAuthOnUsers) => {
@@ -21,10 +20,10 @@ export const loginUserService = async(user:TSAuthOnUsers) => {
         with:{
             user:{
                 columns:{
-                id:true,
-                email:true,
-                name:true,
-                contact_phone:true
+                  id:true,
+                  email:true,
+                  name:true,
+                  contact_phone:true
             }
         }
 

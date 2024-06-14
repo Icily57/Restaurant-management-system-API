@@ -2,7 +2,6 @@ import {Hono} from 'hono';
 import { zValidator } from '@hono/zod-validator';
 import { loginValidator, registerValidator } from '../Validators/user.validator';
 import { loginUser, registerUser } from './auth.controller';
-import { adminRoleAuth, userRoleAuth } from '../middleWare/bearAuth';
 
 
 export const authRouter = new Hono();
