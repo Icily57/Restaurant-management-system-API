@@ -2,7 +2,7 @@ import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import "dotenv/config"
 import { prometheus } from '@hono/prometheus'
-import {html, raw} from 'hono/html'
+import {html} from 'hono/html'
 import { logger } from 'hono/logger'
 import { csrf } from 'hono/csrf'
 import { trimTrailingSlash } from 'hono/trailing-slash'
@@ -52,13 +52,8 @@ app.use('*', registerMetrics)
 app.get('/', (c) => {
   return c.html(
     html`
-   <h1>Welcome to the social media API</h1>
-    <ul>
-      <li><b>message:</b> Welcome social media API, </li>
-      <li><b>version:</b> 1.0.0,</li>
-      <li><b>docs:</b> Please feel free to query the API 📢😂😂,</li>
-      </ul>
- </p>
+   <h1>Welcome to the nokras API</h1>
+    
     `)
 })
 
