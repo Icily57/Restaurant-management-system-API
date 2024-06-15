@@ -11,7 +11,7 @@ import { HTTPException } from 'hono/http-exception'
 import  assert from 'assert' 
 
 
-//table routers
+
 import { userRouter } from './users/user.router'
 import { restaurantRouter } from './restaurant/restaurant.router'
 import { cityRouter } from './city/city.router'
