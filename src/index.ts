@@ -29,7 +29,7 @@ import { categoryRouter } from './category/category.router'
 import { authRouter } from './auth/auth.router'
 
 
-const app = new Hono().basePath('/api')
+const app = new Hono()
 
 const customTimeoutException = () =>
   new HTTPException(408, {
