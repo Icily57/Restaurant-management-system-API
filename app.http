@@ -499,7 +499,7 @@ Authorization:""
 ### Comments API
 #### Get all comments
 
-GET http://localhost:8000/api/comments
+GET http://localhost:8000/api/api/comments
 
 #### Get more comments information
 GET http://localhost:8000/api/comments/2
@@ -558,10 +558,6 @@ Content-Type: application/json
 
 
 ###
-
-GET https://restaurant-management-system-api.azurewebsites.net/api
-
-
 
 
 
