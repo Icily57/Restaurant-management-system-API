@@ -4,34 +4,34 @@ GET http://localhost:8000/
 ### Users API
 #### Get all users
 
-GET http://localhost:8000/api/user
+GET http://localhost:8000/user
 
 ### Get more user information
-GET http://localhost:8000/api/usersInfo
+GET http://localhost:8000/usersInfo
 
 #### Get user by id
 
-GET http://localhost:8000/api/user/1
+GET http://localhost:8000/user/1
 
 #### Create user
 
-POST http://localhost:8000/api/user
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkpvaG4iLCJleHAiOjE3MTgyNzU5NTB9.RBHEWH7c3FdyFUvC-8tTBUKOFezOQ0pLPnbB1hAliy8
+POST http://localhost:8000/user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKb2huIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzE4NjU0Njc2fQ._x5CbNxSVc7FHJy9vr30YckpL7-EG-DIpvbrcDtfiYY
 Content-Type: application/json
 
 {
-    "name": "Ezra Bomett",
-    "contact_phone": "0710984532",
+    "name": "Icily Weird",
+    "contact_phone": "0742068702",
     "contact_verified": "true",
-    "email": "bomett@mail.com",
+    "email": "weirdicily@mail.com",
     "email_verified": "true",
-    "confirmation_code": "XSVFRTH",
-    "password": "ezra10"
+    "confirmation_code": "XSVMKNH",
+    "password": "ice5"
 }
 
 #### Update user
 
-PUT http://localhost:8000/api/user/1
+PUT http://localhost:8000/user/1
 Content-Type: application/json
 
 {
@@ -40,25 +40,25 @@ Content-Type: application/json
 
 #### Delete user
 
-DELETE http://localhost:8000/api/user/10
+DELETE http://localhost:8000/user/10
 
 Authorization: ""
 
 ### States API
 #### Get all states
 
-GET http://localhost:8000/api/state
+GET http://localhost:8000/state
 
 ### Get more state information
-GET http://localhost:8000/api/statesInfo
+GET http://localhost:8000/statesInfo
 
 #### Get state by id
 
-GET http://localhost:8000/api/state/1
+GET http://localhost:8000/state/1
 
 #### Create state
 
-POST http://localhost:8000/api/state
+POST http://localhost:8000/state
 Content-Type: application/json
 
 {
@@ -68,7 +68,7 @@ Content-Type: application/json
 
 #### Update state
 
-PUT http://localhost:8000/api/state/1
+PUT http://localhost:8000/state/1
 Content-Type: application/json
 
 {
@@ -77,25 +77,25 @@ Content-Type: application/json
 
 #### Delete state
 
-DELETE http://localhost:8000/api/state/10
+DELETE http://localhost:8000/state/10
 
 Authorization: ""
 
 ### City API
 #### Get all cities
 
-GET http://localhost:8000/api/city
+GET http://localhost:8000/city
 
 ### Get more city information
-GET http://localhost:8000/api/cityInfo
+GET http://localhost:8000/cityInfo
 
 #### Get city by id
 
-GET http://localhost:8000/api/city/1
+GET http://localhost:8000/city/1
 
 #### Create city
 
-POST http://localhost:8000/api/city
+POST http://localhost:8000/city
 Content-Type: application/json
 
 {
@@ -105,7 +105,7 @@ Content-Type: application/json
 
 #### Update city
 
-PUT http://localhost:8000/api/city/1
+PUT http://localhost:8000/city/1
 Content-Type: application/json
 
 {
@@ -114,25 +114,25 @@ Content-Type: application/json
 
 #### Delete city
 
-DELETE http://localhost:8000/api/city/10
+DELETE http://localhost:8000/city/10
 
 Authorization:""
 
 ### Address API
 #### Get all addresses
 
-GET http://localhost:8000/api/address
+GET http://localhost:8000/address
 
 ### Get more address information
-GET http://localhost:8000/api/addressInfo
+GET http://localhost:8000/addressInfo
 
 #### Get address by id
 
-GET http://localhost:8000/api/address/1
+GET http://localhost:8000/address/1
 
 #### Create address
 
-POST http://localhost:8000/api/address
+POST http://localhost:8000/address
 Content-Type: application/json
 
 {
@@ -142,7 +142,7 @@ Content-Type: application/json
 
 #### Update address
 
-PUT http://localhost:8000/api/address/1
+PUT http://localhost:8000/address/1
 Content-Type: application/json
 
 {
@@ -151,25 +151,25 @@ Content-Type: application/json
 
 #### Delete address
 
-DELETE http://localhost:8000/api/address/10
+DELETE http://localhost:8000/address/10
 
 Authorization:""
 
 ### Restaurant API
 #### Get all restaurants
 
-GET http://localhost:8000/api/restaurant
+GET http://localhost:8000/restaurant
 
 ### Get more restaurant information
-GET http://localhost:8000/api/restaurantInfo
+GET http://localhost:8000/restaurantInfo
 
 #### Get restaurant by id
 
-GET http://localhost:8000/api/restaurant/1
+GET http://localhost:8000/restaurant/1
 
 #### Create restaurant
 
-POST http://localhost:8000/api/restaurant
+POST http://localhost:8000/restaurant
 Content-Type: application/json
 
 {
@@ -179,7 +179,7 @@ Content-Type: application/json
 
 #### Update restaurant
 
-PUT http://localhost:8000/api/restaurant/1
+PUT http://localhost:8000/restaurant/1
 Content-Type: application/json
 
 {
@@ -188,25 +188,25 @@ Content-Type: application/json
 
 #### Delete restaurant
 
-DELETE http://localhost:8000/api/restaurant/10
+DELETE http://localhost:8000/restaurant/10
 
 Authorization:""
 
 ### Restaurant Owner API
 #### Get all restaurant owners
 
-GET http://localhost:8000/api/restaurant_owner
+GET http://localhost:8000/restaurant_owner
 
 ### Get more restaurant owner information
-GET http://localhost:8000/api/restuarantOwnerInfo
+GET http://localhost:8000/restuarantOwnerInfo
 
 #### Get restaurant owner by id
 
-GET http://localhost:8000/api/restaurant_owner/1
+GET http://localhost:8000/restaurant_owner/1
 
 #### Create restaurant owner
 
-POST http://localhost:8000/api/restaurant_owner
+POST http://localhost:8000/restaurant_owner
 Content-Type: application/json
 
 {
@@ -216,7 +216,7 @@ Content-Type: application/json
 
 #### Update restaurant owner
 
-PUT http://localhost:8000/api/restaurant_owner/1
+PUT http://localhost:8000/restaurant_owner/1
 Content-Type: application/json
 
 {
@@ -225,26 +225,26 @@ Content-Type: application/json
 
 #### Delete restaurant owner
 
-DELETE http://localhost:8000/api/restaurant_owner/10
+DELETE http://localhost:8000/restaurant_owner/10
 
 Authorization:""
 
 ### category API
 #### Get all categories
 
-GET http://localhost:8000/api/category
+GET http://localhost:8000/category
 
 ### Get more category information
-GET http://localhost:8000/api/categoryInfo/1
+GET http://localhost:8000/categoryInfo/1
 
 
 #### Get category by id
 
-GET http://localhost:8000/api/category/1
+GET http://localhost:8000/category/1
 
 #### Create category
 
-POST http://localhost:8000/api/category
+POST http://localhost:8000/category
 Content-Type: application/json
 
 {
@@ -253,7 +253,7 @@ Content-Type: application/json
 
 #### Update category
 
-PUT http://localhost:8000/api/category/1
+PUT http://localhost:8000/category/1
 Content-Type: application/json
 
 {
@@ -262,25 +262,25 @@ Content-Type: application/json
 
 #### Delete category
 
-DELETE http://localhost:8000/api/category/10
+DELETE http://localhost:8000/category/10
 
 Authorization:""
 
 ### Menu Items API
 #### Get all menu items
 
-GET http://localhost:8000/api/menu_items
+GET http://localhost:8000/menu_items
 
 #### Get more menu items information
-GET http://localhost:8000/api/menuInfo
+GET http://localhost:8000/menuInfo
 
 #### Get menu item by id
 
-GET http://localhost:8000/api/menu_items/1
+GET http://localhost:8000/menu_items/1
 
 #### Create menu item
 
-POST http://localhost:8000/api/menu_items
+POST http://localhost:8000/menu_items
 Content-Type: application/json
 
 {
@@ -292,7 +292,7 @@ Content-Type: application/json
 
 #### Update menu item
 
-PUT http://localhost:8000/api/menu_items/1
+PUT http://localhost:8000/menu_items/1
 Content-Type: application/json
 
 {
@@ -301,25 +301,25 @@ Content-Type: application/json
 
 #### Delete menu item
 
-DELETE http://localhost:8000/api/menu_items/10
+DELETE http://localhost:8000/menu_items/10
 
 Authorization:""
 
 ### Orders API
 #### Get all orders
 
-GET http://localhost:8000/api/orders
+GET http://localhost:8000/orders
 
 #### Get more orders information
-GET http://localhost:8000/api/OrderInfo
+GET http://localhost:8000/OrderInfo
 
 #### Get order by id
 
-GET http://localhost:8000/api/orders/1
+GET http://localhost:8000/orders/1
 
 #### Create order
 
-POST http://localhost:8000/api/orders
+POST http://localhost:8000/orders
 Content-Type: application/json
 
 {
@@ -331,7 +331,7 @@ Content-Type: application/json
 
 #### Update order
 
-PUT http://localhost:8000/api/orders/1
+PUT http://localhost:8000/orders/1
 Content-Type: application/json
 
 {
@@ -340,25 +340,25 @@ Content-Type: application/json
 
 #### Delete order
 
-DELETE http://localhost:8000/api/orders/10
+DELETE http://localhost:8000/orders/10
 
 Authorization:""
 
 ### Order Menu Item API
 #### Get all order menu items
 
-GET http://localhost:8000/api/order_menu_item
+GET http://localhost:8000/order_menu_item
 
 #### Get more order menu items information
-GET http://localhost:8000/api/menuOrdersInfo
+GET http://localhost:8000/menuOrdersInfo
 
 #### Get order menu item by id
 
-GET http://localhost:8000/api/order_menu_item/1
+GET http://localhost:8000/order_menu_item/1
 
 #### Create order menu item
 
-POST http://localhost:8000/api/order_menu_item
+POST http://localhost:8000/order_menu_item
 Content-Type: application/json
 
 {
@@ -369,7 +369,7 @@ Content-Type: application/json
 
 #### Update order menu item
 
-PUT http://localhost:8000/api/order_menu_item/1
+PUT http://localhost:8000/order_menu_item/1
 Content-Type: application/json
 
 {
@@ -378,25 +378,25 @@ Content-Type: application/json
 
 #### Delete order menu item
 
-DELETE http://localhost:8000/api/order_menu_item/10
+DELETE http://localhost:8000/order_menu_item/10
 
 Authorization:""
 
 ### Drivers API
 #### Get all drivers
 
-GET http://localhost:8000/api/drivers
+GET http://localhost:8000/drivers
 
 #### Get more drivers information
-GET http://localhost:8000/api/driverInfo
+GET http://localhost:8000/driverInfo
 
 #### Get driver by id
 
-GET http://localhost:8000/api/drivers/1
+GET http://localhost:8000/drivers/1
 
 #### Create driver
 
-POST http://localhost:8000/api/drivers
+POST http://localhost:8000/drivers
 Content-Type: application/json
 
 {
@@ -410,7 +410,7 @@ Content-Type: application/json
 
 #### Update driver
 
-PUT http://localhost:8000/api/drivers/1
+PUT http://localhost:8000/drivers/1
 Content-Type: application/json
 
 {
@@ -419,25 +419,25 @@ Content-Type: application/json
 
 #### Delete driver
 
-DELETE http://localhost:8000/api/drivers/10
+DELETE http://localhost:8000/drivers/10
 
 Authorization:""
 
 ### Orders Status API
 #### Get all orders status
 
-GET http://localhost:8000/api/orders_status
+GET http://localhost:8000/orders_status
 
 #### Get more orders status information
-GET http://localhost:8000/api/orderStatusInfo
+GET http://localhost:8000/orderStatusInfo
 
 #### Get order status by id
 
-GET http://localhost:8000/api/orders_status/1
+GET http://localhost:8000/orders_status/1
 
 #### Create order status
 
-POST http://localhost:8000/api/orders_status
+POST http://localhost:8000/orders_status
 Content-Type: application/json
 
 {
@@ -447,7 +447,7 @@ Content-Type: application/json
 
 #### Update order status
 
-PUT http://localhost:8000/api/orders_status/1
+PUT http://localhost:8000/orders_status/1
 Content-Type: application/json
 
 {
@@ -456,25 +456,25 @@ Content-Type: application/json
 
 #### Delete order status
 
-DELETE http://localhost:8000/api/orders_status/10
+DELETE http://localhost:8000/orders_status/10
 
 Authorization:""
 
 ### status catalog API
 #### Get all status catalog
 
-GET http://localhost:8000/api/status_catalog
+GET http://localhost:8000/status_catalog
 
 #### Get more status catalog information
-GET http://localhost:8000/api/statusCatalog
+GET http://localhost:8000/statusCatalog
 
 #### Get status catalog by id
 
-GET http://localhost:8000/api/status_catalog/1
+GET http://localhost:8000/status_catalog/1
 
 #### Create status catalog
 
-POST http://localhost:8000/api/status_catalog
+POST http://localhost:8000/status_catalog
 Content-Type: application/json
 
 {
@@ -483,7 +483,7 @@ Content-Type: application/json
 
 #### Update status catalog
 
-PUT http://localhost:8000/api/status_catalog/1
+PUT http://localhost:8000/status_catalog/1
 Content-Type: application/json
 
 {
@@ -492,25 +492,25 @@ Content-Type: application/json
 
 #### Delete status catalog  
 
-DELETE http://localhost:8000/api/status_catalog/10
+DELETE http://localhost:8000/status_catalog/10
 
 Authorization:""
 
 ### Comments API
 #### Get all comments
 
-GET http://localhost:8000/api/api/comments
+GET http://localhost:8000/comments
 
 #### Get more comments information
-GET http://localhost:8000/api/comments/2
+GET http://localhost:8000/comments/2
 
 #### Get comment by id
 
-GET http://localhost:8000/api/comments/1
+GET http://localhost:8000/comments/1
 
 #### Create comment
 
-POST http://localhost:8000/api/comments
+POST http://localhost:8000/comments
 Content-Type: application/json
 
 {
@@ -521,7 +521,7 @@ Content-Type: application/json
 
 #### Update comment
 
-PUT http://localhost:8000/api/comments/1
+PUT http://localhost:8000/comments/1
 Content-Type: application/json
 
 {
@@ -530,25 +530,25 @@ Content-Type: application/json
 
 #### Delete comment 
 
-DELETE http://localhost:8000/api/comments/3
+DELETE http://localhost:8000/comments/3
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkpvaG4iLCJleHAiOjE3MTgyOTU1NTl9.8eMiCcKVFNEyagOE9L4xu_LJJ8DqGBoBrXkhooWA3rE
 
 
 ### Auth API
 #### Register 
 
-POST http://localhost:8000/api/auth/register
+POST http://localhost:8000/auth/register
 Content-Type: application/json
 
 {
-    "user_id": 10,
-    "username": "Ezra",
-    "password": "ezra10",
+    "user_id": 24,
+    "username": "Icily",
+    "password": "ice5",
     "role": "user"
 }
 
 #### Login
-POST http://localhost:8000/api/auth/login
+POST http://localhost:8000/auth/login
 Content-Type: application/json
 
 {

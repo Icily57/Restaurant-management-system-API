@@ -9,6 +9,9 @@ import { trimTrailingSlash } from 'hono/trailing-slash'
 import { timeout } from 'hono/timeout'
 import { HTTPException } from 'hono/http-exception'
 import  assert from 'assert' 
+import sendMail from './mail'
+import cron from 'node-cron';
+
 
 
 
@@ -27,6 +30,7 @@ import { restaurantOwnerRouter } from './restaurant_owner/restaurant_owner.route
 import { menuItemsRouter } from './menu_items/menu_items.router'
 import { categoryRouter } from './category/category.router'
 import { authRouter } from './auth/auth.router'
+import { string } from 'zod'
 
 
 const app = new Hono()
@@ -88,6 +92,17 @@ app.route("/", restaurantOwnerRouter)
 app.route("/", menuItemsRouter)
 app.route("/", categoryRouter)
 app.route("/auth", authRouter)
+ 
+
+cron.schedule('0 09 3 5-12 0', ()  => {
+  sendMail(
+      "weirdicily@gmail.com",
+      'Upgrade your membership to VIP',
+      "🙏Hello, for as low as $20 per month you can join our VIP family for exclusive services and major discounts on everything.The offer stands till " , 
+      "Icily"  
+  )
+  console.log('Mail sent');
+});
 
 assert(process.env.PORT, "PORT is not set in the .env file")
 
